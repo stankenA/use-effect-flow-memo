@@ -1,19 +1,7 @@
-import { useState } from "react";
-import styles from "./App.module.scss";
-import { Counter } from "./components/counter";
+import { Main } from "./components/main";
 
 function App() {
-  const [isCounterVisible, setIsCounterVisible] = useState(false);
-
-  return (
-    <main className={styles.main}>
-      <button onClick={() => setIsCounterVisible(!isCounterVisible)}>
-        Toggle counter
-      </button>
-
-      {isCounterVisible && <Counter />}
-    </main>
-  );
+  return <Main />;
 }
 
 export default App;

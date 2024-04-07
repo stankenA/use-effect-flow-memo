@@ -1,13 +1,21 @@
 import { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
+import { useRenderCount } from "../../lib/hooks/useRenderCount";
 
 export const Counter = () => {
+  useRenderCount("Counter");
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    console.log("useEffect no dep");
+    console.log("useEffect with empty dep:", count);
 
-    return () => console.log("useEffect no dep cleanup");
+    return () => console.log("useEffect cleanup with empty dep:", count);
+  }, []);
+
+  useEffect(() => {
+    console.log("useEffect no dep with count:", count);
+
+    return () => console.log("useEffect no dep cleanup with count", count);
   });
 
   return (
