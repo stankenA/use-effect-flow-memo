@@ -1,4 +1,4 @@
-import React, { FC, memo } from "react";
+import { FC, memo } from "react";
 import { useRenderCount } from "../../lib/hooks/useRenderCount";
 
 export const ChildMemo: FC<{

@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { useRenderCount } from "../../lib/hooks/useRenderCount";
 
 export const ChildNoMemo: FC<{ obj: { count: number } }> = ({ obj }) => {

@@ -1,4 +1,3 @@
-import React from "react";
 import { useRenderCount } from "../../lib/hooks/useRenderCount";
 
 export const Child = () => {

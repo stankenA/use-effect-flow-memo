@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { useRenderCount } from "../../lib/hooks/useRenderCount";
 import { ValuableContext } from "./context";
 
