@@ -3,7 +3,7 @@ import { ValuableContext } from "./context";
 import { useRenderCount } from "../../lib/hooks/useRenderCount";
 
 export const ContextComponent: FC<PropsWithChildren> = ({ children }) => {
-  useRenderCount("Context component");
+  useRenderCount("Context provider component");
 
   const [count, setCount] = useState(0);
 

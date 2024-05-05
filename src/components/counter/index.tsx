@@ -13,9 +13,9 @@ export const Counter = () => {
   }, []);
 
   useEffect(() => {
-    console.log("useEffect no dep with count:", count);
+    console.log("useEffect no dep:", count);
 
-    return () => console.log("useEffect no dep cleanup with count", count);
+    return () => console.log("useEffect no dep cleanup", count);
   });
 
   return (

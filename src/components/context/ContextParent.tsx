@@ -4,9 +4,9 @@ import { ContextChild } from "./ContextChild";
 
 export const ContextParent = () => {
   return (
-    <section>
+    <>
       <Child />
       <ContextChild />
-    </section>
+    </>
   );
 };
